@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- lang  en    是英文网站 -->
+  <!-- lang  zh-CH 是中文网站 -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习文档</title>
+  </head>
+  <body>
+    <!--  这是一个注释 -->
+    水平线
+    <hr />
+    基础标签
+    <h1 id="h1" >h1</h1>  <!-- 这里我加个id后面锚点链接需要 -->
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <hr>
+    段落标签
+    <p>段落</p>
+    <hr>
+    换行标签
+    <br />
+    <hr>
+    文本格式化标签
+    <b>加粗</b>
+    <i>倾斜</i>
+    <s>删除线</s>
+    <u>下划线</u>
+    <hr>
+    <!-- div标签 -->
+    <div>div标签</div>
+    <!-- span标签 -->
+    <span>span标签</span>
+    <hr>
+    图像标签
+    <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="加载失败" title="这是一个图片">
+    <br>
+    图像标签属性：alt图像加载不出来时提示的文字----title鼠标悬停图像显示的文字
+    <hr>
+    路径：
+    <br>
+    同级目录文件a.html ---- ./a.html
+    <br>
+    下级目录下的文件a.html --- ./xxx/a.html
+    <br>
+    上级目录下的文件a.html --- ../a.html
+    <hr>
+    超链接标签
+    <a href="http://www.baidu.com">百度</a>
+    <br>
+    href可以是具体地址，可以是路径，可以是#（空链接）
+    <br>
+    target属性指定跳转方式。_self(默认)本窗口打开，_blank在新窗口打开
+    <br>
+    锚点链接---target指向本页面的id
+    <a href="#h1">锚点到h1</a>
+    <hr>
+    html特殊字符<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-f8edbfd90870598b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看</a>
+    <hr>
+    <!-- 表格不太常用，了解就行 -->
+    table：表格区域 tr：行 td： 列
+    <br>
+    th也是列 通常用于表头 thead通常包裹表头 tbody通常包裹表主体 <a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-8d7f55a06334fa8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">不太常用的属性</a>
+    <br>
+    <table>
+     <thead><tr><th>姓名</th><th>班级</th><th>年级</th></tr></thead> 
+     <tbody><tr><td>张三</td><td>一班</td><td>18级</td></tr>
+      <tr><td>李四</td><td>二班</td><td>19级</td></tr></tbody> 
+    </table>
+    合并单元格  colspan跨列合并 rowspan跨行合并
+    <hr>
+   <!-- 下面必须掌握 -->
+    列表标签--无序列表 ul li----有序列表 ol li----自定义列表 dl dt dd<br>
+    <ul>
+      <li>第一</li>
+      <li>第二</li>
+    </ul>
+    <ol>
+      <li>哈哈</li>
+      <li>嘿嘿</li>
+    </ol>
+    <dl>
+      <dt>关于我们</dt>
+      <dd>一</dd>
+      <dd>二</dd>
+      <dd>三</dd>
+    </dl>
+    <hr>
+    表单域from action="提交地址"  method="提交方式"<br>
+    <input type="text">输入框<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-00c3bd622e841468.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看输入框属性</a>
+    单元复选需要有个共同的name 默认选中属性checked <a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-e0139a31e2b6373a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">更多属性</a>
+    <br>
+    用户名：<input type="text" ><br>
+    密码：<input type="password" ><br>
+    性别：<input type="radio" name="radio" checked  value="男" >男<input type="radio" name="radio" value="女">女
+    <br>
+    label标签，优化选中点击的用户体验（可能会用到）<br>
+    性别：
+    <input type="radio" name="radio"  value="男" id="nan" >
+    <label for="nan">男</label>
+    <hr>
+    select下拉菜单 selected默认选择
+    <select>
+      <option value="请选择">--请选择--</option>
+      <option selected value="男">男</option>
+      <option value="女">女</option>
+    </select>
+    文本域 rows列 cols行
+    <textarea  cols="30" rows="5"></textarea>
+    <hr>
+  </body>
+</html>
